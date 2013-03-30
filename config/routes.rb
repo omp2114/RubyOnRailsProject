@@ -1,4 +1,9 @@
 Homework1::Application.routes.draw do
+
+  root :to =>"home#index"
+  match "/home" => "home#index"
+  #root :controller => :hello, :action => :index
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
