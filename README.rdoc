@@ -1,5 +1,8 @@
 Meet Up Choice: 
 Reddit New York. Signed up but its in the middle of a couple of project due dates so will be difficult to attend. Have always wanted to though!
+
+Also a quick note: I removed the regular public html because I was following a tutorial about how to develop a home page. If I go to localhost:3000/home it displays the extra credit but it is also the default on localhost:3000
+
 == Welcome to Rails
 
 Rails is a web-application framework that includes everything needed to create
