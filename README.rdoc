@@ -1,3 +1,5 @@
+Meet Up Choice: 
+Reddit New York. Signed up but its in the middle of a couple of project due dates so will be difficult to attend. Have always wanted to though!
 == Welcome to Rails
 
 Rails is a web-application framework that includes everything needed to create
