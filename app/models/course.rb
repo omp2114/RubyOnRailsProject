@@ -1,6 +1,7 @@
 class Course
   include Mongoid::Document
   field :professor, type: String
+  field :name, type: String
   field :description, type: String
   field :callnumber, type: Integer
   field :enrollment, type: Integer
