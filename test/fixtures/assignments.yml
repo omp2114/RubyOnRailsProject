@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  due_date: 2013-04-07
+  assign_date: 2013-04-07
+  description: MyText
+  points_max: 1
+  points_earned: 1.5
+
+two:
+  due_date: 2013-04-07
+  assign_date: 2013-04-07
+  description: MyText
+  points_max: 1
+  points_earned: 1.5

@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  professor: MyString
+  description: MyText
+  callnumber: 1
+  enrollment: 1
+  days: MyString
+  schedule: 2013-04-07 14:18:35
+  TA: MyString
+
+two:
+  professor: MyString
+  description: MyText
+  callnumber: 1
+  enrollment: 1
+  days: MyString
+  schedule: 2013-04-07 14:18:35
+  TA: MyString

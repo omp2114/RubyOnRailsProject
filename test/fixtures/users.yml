@@ -1,11 +1,15 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
+  uni: MyString
   first_name: MyString
   last_name: MyString
-  email: MyString
+  majors: MyString
+  minors: MyString
 
 two:
+  uni: MyString
   first_name: MyString
   last_name: MyString
-  email: MyString
+  majors: MyString
+  minors: MyString

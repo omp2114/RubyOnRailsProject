@@ -1,0 +1,31 @@
+<h1>Listing assignments</h1>
+
+<table>
+  <tr>
+    <th>Due date</th>
+    <th>Assign date</th>
+    <th>Description</th>
+    <th>Points max</th>
+    <th>Points earned</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @assignments.each do |assignment| %>
+  <tr>
+    <td><%= assignment.due_date %></td>
+    <td><%= assignment.assign_date %></td>
+    <td><%= assignment.description %></td>
+    <td><%= assignment.points_max %></td>
+    <td><%= assignment.points_earned %></td>
+    <td><%= link_to 'Show', assignment %></td>
+    <td><%= link_to 'Edit', edit_assignment_path(assignment) %></td>
+    <td><%= link_to 'Destroy', assignment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Assignment', new_assignment_path %>

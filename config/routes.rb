@@ -1,5 +1,14 @@
 Homework1::Application.routes.draw do
 
+  resources :assignments
+
+
+  resources :courses
+
+
+  resources :users
+
+
   root :to =>"home#index"
   match "/home" => "home#index"
   #root :controller => :hello, :action => :index

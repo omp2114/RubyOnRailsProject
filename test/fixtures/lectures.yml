@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  lecture_date: 2013-04-07
+  lecture_time: 2013-04-07 14:20:17
+  number: 1
+  title: MyString
+
+two:
+  lecture_date: 2013-04-07
+  lecture_time: 2013-04-07 14:20:17
+  number: 1
+  title: MyString
