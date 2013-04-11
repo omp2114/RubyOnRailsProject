@@ -5,6 +5,7 @@ class Assignment
   field :description, type: String
   field :points_max, type: Integer
   field :points_earned, type: Float
+
   belongs_to :course
   embeds_one :upload
 end

@@ -5,6 +5,7 @@ class User
   field :last_name, type: String
   field :majors, type: String
   field :minors, type: String
-  has_and_belongs_to_many :course
+
+  has_and_belongs_to_many :courses
 
 end

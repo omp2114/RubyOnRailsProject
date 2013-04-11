@@ -3,5 +3,6 @@ class Upload
   field :subject, type: String
   field :body, type: String
   field :file, type: String
+
   embedded_in :assignment
 end

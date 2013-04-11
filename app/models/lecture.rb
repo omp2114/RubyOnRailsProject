@@ -5,6 +5,7 @@ class Lecture
   field :content, type: String
   field :number, type: Integer
   field :title, type: String
+
   embedded_in :course
 
 end
