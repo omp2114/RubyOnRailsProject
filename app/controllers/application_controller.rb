@@ -3,7 +3,6 @@ class ApplicationController < ActionController::Base
   protect_from_forgery
 
   def current_user
-  	logger.debug "this is the session hash:  #{session}"
     if @current_user.nil?
       @current_user = User.find(session[:user_id]) if session[:user_id]
     end

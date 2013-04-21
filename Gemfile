@@ -1,9 +1,9 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.13'
+gem 'rails', '~>3.2.0'
 gem 'execjs'
 gem 'therubyracer'
-gem 'mongoid'
+gem "mongoid", "~>3.0.0"
 gem 'bson_ext'
 
 # Bundle edge Rails instead:
