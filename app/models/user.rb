@@ -10,4 +10,7 @@ class User
    #validates :email, uniqueness: true
   has_and_belongs_to_many :courses
 
+  validates :email, presence: true
+
+
 end
