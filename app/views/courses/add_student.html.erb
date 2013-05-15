@@ -1,0 +1,7 @@
+<h1>Add Student</h1>
+
+<%= form_tag(:controller => "courses", :action => "add_student") do %>
+	<%= label_tag(:uni, "Add Student Uni:") %>
+ 	<%= text_field_tag(:uni) %>
+  	<%= submit_tag("Add Student") %>
+<% end %>

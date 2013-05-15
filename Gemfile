@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
 gem 'rails', '~>3.2.0'
-gem 'execjs'
-gem 'therubyracer'
+#gem 'execjs'
+#gem 'therubyracer'
 gem "mongoid", "~>3.0.0"
 gem 'bson_ext'
 
@@ -24,6 +24,7 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'friendly_id'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

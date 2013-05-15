@@ -38,7 +38,16 @@
   <b>Ta:</b>
   <%= @course.TA %>
 </p>
+<p>
+  <b>Students:</b>
+  <% @course.users.each do |user| %>
+  <tr>
+    <td><%= user.uni%></td>
+  </tr>
+  <% end %>
+</p>
 
 
 <%= link_to 'Edit', edit_course_path(@course) %> |
-<%= link_to 'Back', courses_path %>
+<%= link_to 'Back', courses_path %> 
+

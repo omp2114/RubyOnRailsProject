@@ -1,13 +1,39 @@
 class CoursesController < ApplicationController
-
+before_filter :authorize, :except => [:index, :show]
   # GET /courses.json
   def index
-    @courses = Course.all
-
+    if admin?
+      @courses = Course.all
+    else 
+      @courses = User.find(session[:user_id]).courses if session[:user_id]
+    end 
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @courses }
     end
+  end
+
+
+
+
+  def add_student
+    @course = Course.find(params[:id])
+    
+    user_to_add = User.find_by(uni: params[:uni])
+    if (user_to_add) 
+      logger.info user_to_add.uni
+      @course.users << user_to_add
+      user_to_add.courses << @course
+      @course.save
+      user_to_add.save
+      redirect_to @course, notice: 'Student was successfully created.'
+
+    end
+
+  
+    #@course.update_attributes(params[:course])
+   
+   # end
   end
 
   # GET /courses/1
@@ -80,4 +106,7 @@ class CoursesController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  
+
 end

@@ -1,5 +1,8 @@
 class Course
   include Mongoid::Document
+  def to_param
+    "#{id} #{name}".parameterize
+  end
   field :professor, type: String
   field :name, type: String
   field :description, type: String

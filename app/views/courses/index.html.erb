@@ -17,6 +17,7 @@
   </tr>
 
 <% @courses.each do |course| %>
+  <% current_user = User.find(session[:user_id])%>
   <tr>
     <td><%= course.name %></td>
     <td><%= course.building %></td>
@@ -28,12 +29,17 @@
     <td><%= course.schedule %></td>
     <td><%= course.TA %></td>
     <td><%= link_to 'Show', course %></td>
-    <td><%= link_to 'Edit', edit_course_path(course) %></td>
-    <td><%= link_to 'Destroy', course, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <% if admin? %>
+        <td><%= link_to 'Edit', edit_course_path(course) %></td>
+        <td><%= link_to 'Destroy', course, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Add Student', add_student_path(course) %></td>
+
+    <% end %>
   </tr>
 <% end %>
 </table>
 
 <br />
-
-<%= link_to 'New Course', new_course_path %>
+<% if admin? %>
+    <%= link_to 'New Course', new_course_path %>
+<% end %>

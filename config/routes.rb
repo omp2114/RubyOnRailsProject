@@ -1,9 +1,9 @@
 Homework1::Application.routes.draw do
-
 	resources :assignments
 	resources :courses
 	resources :users
 	#resources :session
+	match "courses/:id/add_student" => "courses#add_student", :as => "add_student"
 
 	#match "/home" => "home#index"
 	match "signup" => "users#new", :as => "signup"
