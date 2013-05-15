@@ -20,4 +20,7 @@ class Course
   has_and_belongs_to_many  :users
   embeds_many :lectures
   has_many :assignments
+
+  validates :name, presence: true
+
 end
