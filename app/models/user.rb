@@ -6,8 +6,8 @@ class User
   field :last_name, type: String
   field :majors, type: String
   field :minors, type: String
-  field :role, type: String, default: 'student'
-
+  field :role, type: String, default: ->{'student'}
+   #validates :email, uniqueness: true
   has_and_belongs_to_many :courses
 
 end

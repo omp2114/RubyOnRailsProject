@@ -5,13 +5,29 @@ body {
   font-size: 13px;
   line-height: 18px;
 }
-
+.user_header, .footer {
+  text-align: right;
+  display: block;
+}
+#centerblock {
+  margin:0 auto;
+  text-align: left;
+}
+form {
+  text-align:center;
+}
+table {
+  text-align:center;  
+  margin: 0 auto;
+}
 p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
 }
-
+h1 {
+  text-align: center;
+}
 pre {
   background-color: #eee;
   padding: 10px;

@@ -48,6 +48,13 @@
 </p>
 
 
-<%= link_to 'Edit', edit_course_path(@course) %> |
+<p>
+    <b> Announcements: </b>
+  <%= @course.announcement %>
+</p>
+
+<% if admin? %>
+  <%= link_to 'Edit', edit_course_path(@course) %> |
+<%end%>
 <%= link_to 'Back', courses_path %> 
 

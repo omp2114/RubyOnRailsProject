@@ -11,7 +11,7 @@ class ApplicationController < ActionController::Base
     end
   end
   def admin?
-    @current_user.role == 'student'
+    @current_user.role == 'admin'
   end
   helper_method :admin?
 
