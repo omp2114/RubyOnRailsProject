@@ -4,7 +4,7 @@ Homework1::Application.routes.draw do
 	resources :users
 	#resources :session
 	match "courses/:id/add_student" => "courses#add_student", :as => "add_student"
-
+	match "course/:id/add_announcement" => "courses#add_announcement", :as => "add_announcement"
 	#match "/home" => "home#index"
 	match "signup" => "users#new", :as => "signup"
 	match "login" => "sessions#new", :as => "login", :via => :get

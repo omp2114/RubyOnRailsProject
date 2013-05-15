@@ -1,4 +1,5 @@
-class UsersController < ApplicationController
+class UsersController < ApplicationController    
+before_filter :authorize
 skip_before_filter :require_user, :only => [:new, :create]
 
   # GET /users

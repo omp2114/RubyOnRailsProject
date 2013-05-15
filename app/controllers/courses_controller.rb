@@ -13,7 +13,17 @@ before_filter :authorize, :except => [:index, :show]
     end
   end
 
-
+  def add_announcement
+    @course = Course.find(params[:id])
+    @course.announcement = params[:announce]
+    if (params[:announce]) 
+      if (@course.save) 
+        redirect_to @course, notice: 'Announcement was successfully created.'
+      else 
+        redirect_to @course, notice: 'Faild to add announcement.'
+      end
+    end   
+  end
 
 
   def add_student

@@ -1,6 +1,7 @@
 class Course
   include Mongoid::Document
   include Mongoid::Slug
+  
   field :professor, type: String
   field :name, type: String
   field :description, type: String

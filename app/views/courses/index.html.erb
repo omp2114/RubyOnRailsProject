@@ -6,14 +6,9 @@
 <table>
   <tr>
     <th>Name</th>
-    <th>Building</th>
     <th>Professor</th>
-    <th>Description</th>
     <th>Callnumber</th>
-    <th>Enrollment</th>
     <th>Days</th>
-    <th>Schedule</th>
-    <th>Ta</th>
     <th></th>
     <th></th>
     <th></th>
@@ -23,19 +18,17 @@
   <% current_user = User.find(session[:user_id])%>
   <tr>
     <td><%= course.name %></td>
-    <td><%= course.building %></td>
     <td><%= course.professor %></td>
-    <td><%= course.description %></td>
     <td><%= course.callnumber %></td>
-    <td><%= course.enrollment %></td>
     <td><%= course.days %></td>
-    <td><%= course.schedule %></td>
-    <td><%= course.TA %></td>
     <td><%= link_to 'Show', course %></td>
     <% if admin? %>
         <td><%= link_to 'Edit', edit_course_path(course) %></td>
         <td><%= link_to 'Destroy', course, method: :delete, data: { confirm: 'Are you sure?' } %></td>
         <td><%= link_to 'Add Student', add_student_path(course) %></td>
+        <td><%= link_to 'Add Announcement', add_announcement_path(course) %></td>
+
+
     <% end %>
   </tr>
 <% end %>

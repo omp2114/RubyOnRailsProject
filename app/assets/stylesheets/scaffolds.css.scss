@@ -13,9 +13,20 @@ body {
   margin:0 auto;
   text-align: left;
 }
+td {
+  padding-left: 10px;
+  padding-right: 10px;
+}
 form {
   text-align:center;
+  width: 400px;
+  text-align: center;
+  margin: 0 auto;
 }
+textarea {
+  width: 400px;
+  height: 100px;
+} 
 table {
   text-align:center;  
   margin: 0 auto;
@@ -32,6 +43,10 @@ pre {
   background-color: #eee;
   padding: 10px;
   font-size: 11px;
+}
+.announce {
+  color: Green;
+  text-align: right;
 }
 
 a {
